@@ -22,6 +22,7 @@
 #define LOADING_ANIMATION_SCRIPT        119
 #define SPEECH_RECOGNIZER_SCRIPT        120
 #define SPATIAL_ANCHORS_SCRIPT          121
+#define KINECT_SCRIPT                   122
 
 // Next default values for new objects
 // 

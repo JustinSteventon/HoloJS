@@ -188,6 +188,9 @@
     <ClInclude Include="..\..\..\core\include\holojs\private\spatial-anchors.h">
       <Filter>include\holojs\private</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\core\kinect-projection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include=" ..\..\..\core\blob.cpp" />
@@ -237,6 +240,7 @@
     <ClCompile Include="..\..\..\core\surface-mapping-projection.cpp" />
     <ClCompile Include="..\..\..\core\speech-recognizer-projection.cpp" />
     <ClCompile Include="..\..\..\core\spatial-anchors-projection.cpp" />
+    <ClCompile Include="..\..\..\core\kinect-projection.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=" ..\..\..\core\scripts\2d-context.js">
@@ -297,6 +301,9 @@
       <Filter>scripts</Filter>
     </None>
     <None Include="..\..\..\core\scripts\spatial-anchors.js">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="..\..\..\core\scripts\kinect.js">
       <Filter>scripts</Filter>
     </None>
   </ItemGroup>

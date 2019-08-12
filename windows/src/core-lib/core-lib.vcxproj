@@ -206,6 +206,7 @@
     <ClInclude Include="..\..\..\core\include\holojs\private\speech-recognizer.h" />
     <ClInclude Include="..\..\..\core\include\holojs\private\surface-mapping.h" />
     <ClInclude Include="..\..\..\core\include\holojs\private\websocket.h" />
+    <ClInclude Include="..\..\..\core\kinect-projection.h" />
     <ClInclude Include="..\..\..\core\script-context.h" />
     <ClInclude Include="..\..\..\core\spatial-anchors-projection.h" />
     <ClInclude Include="..\..\..\core\speech-recognizer-projection.h" />
@@ -238,6 +239,7 @@
     <ClCompile Include=" ..\..\..\core\webgl\webgl-rendering-context.cpp" />
     <ClCompile Include=" ..\..\..\core\window-element.cpp" />
     <ClCompile Include=" ..\..\..\core\xml-http-request.cpp" />
+    <ClCompile Include="..\..\..\core\kinect-projection.cpp" />
     <ClCompile Include="..\..\..\core\script-context.cpp" />
     <ClCompile Include="..\..\..\core\spatial-anchors-projection.cpp" />
     <ClCompile Include="..\..\..\core\speech-recognizer-projection.cpp" />
@@ -263,6 +265,7 @@
     <None Include=" ..\..\..\core\scripts\webvr.js" />
     <None Include=" ..\..\..\core\scripts\window.js" />
     <None Include=" ..\..\..\core\scripts\xmlhttprequest.js" />
+    <None Include="..\..\..\core\scripts\kinect.js" />
     <None Include="..\..\..\core\scripts\loading-animation.js" />
     <None Include="..\..\..\core\scripts\spatial-anchors.js" />
     <None Include="..\..\..\core\scripts\speech-recognizer.js" />

@@ -9,6 +9,7 @@
 #include "spatial-anchors-projection.h"
 #include "speech-recognizer-projection.h"
 #include "surface-mapping-projection.h"
+#include "kinect-projection.h"
 #include "webaudio/audio-context-projection.h"
 #include "webgl/webgl-projections.h"
 #include "websocket-projection.h"
@@ -63,6 +64,7 @@ class ScriptContext {
     std::unique_ptr<HoloJs::Interfaces::PromiseContinuation> m_promiseContinuation;
     std::unique_ptr<HoloJs::WebSocketProjection> m_websocketProjection;
     std::unique_ptr<HoloJs::SurfaceMappingProjection> m_surfaceMappingProjection;
+    std::unique_ptr<HoloJs::KinectProjection> m_kinectProjection;
     std::unique_ptr<HoloJs::SpeechRecognizerProjection> m_speechRecognizerProjection;
     std::unique_ptr<HoloJs::SpatialAnchorsProjection> m_spatialAnchorsProjection;
 

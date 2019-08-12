@@ -28,6 +28,7 @@ const wchar_t* g_InternalScriptNames[] = {L"window.js",
                                           L"webaudio.js",
                                           L"websocket.js",
                                           L"surface-mapper.js",
+                                          L"kinect.js",
                                           L"speech-recognizer.js",
                                           L"spatial-anchors.js"};
 

@@ -19,6 +19,7 @@ class IHoloJsView;
 class ISpeechRecognizer;
 class ISpatialAnchorsStore;
 class ISpatialAnchor;
+class IKinect;
 
 class IPlatform {
    public:
@@ -62,6 +63,9 @@ class IPlatform {
 
     virtual bool isSurfaceMappingAvailable() = 0;
     virtual HoloJs::ISurfaceMapper* getSurfaceMapper(HoloJs::IHoloJsScriptHostInternal* host) = 0;
+
+    virtual bool isKinectAvailable() = 0;
+    virtual HoloJs::IKinect* getKinect(HoloJs::IHoloJsScriptHostInternal* host) = 0;
 
     virtual bool isSpeechRecognizerAvailable() = 0;
     virtual HoloJs::ISpeechRecognizer* getSpeechRecognizer(HoloJs::IHoloJsScriptHostInternal* host) = 0;

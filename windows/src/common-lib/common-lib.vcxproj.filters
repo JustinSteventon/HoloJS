@@ -117,8 +117,8 @@
     <ClInclude Include="spatial-anchors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\holojs\windows\image-data.h">
-      <Filter>include\holojs\windows</Filter>
+    <ClInclude Include="kinect-sensor-impl.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +167,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="spatial-anchors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kinect-sensor-impl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

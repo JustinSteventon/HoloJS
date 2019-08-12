@@ -101,6 +101,9 @@ long ScriptContext::initialize()
     m_surfaceMappingProjection = make_unique<HoloJs::SurfaceMappingProjection>(m_resourceManager, m_host);
     RETURN_IF_FAILED(m_surfaceMappingProjection->initialize());
 
+    m_kinectProjection = make_unique<HoloJs::KinectProjection>(m_resourceManager, m_host);
+    RETURN_IF_FAILED(m_kinectProjection->initialize());
+
     m_speechRecognizerProjection = make_unique<HoloJs::SpeechRecognizerProjection>(m_resourceManager, m_host);
     RETURN_IF_FAILED(m_speechRecognizerProjection->initialize());
 

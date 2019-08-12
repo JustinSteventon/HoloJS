@@ -7,6 +7,7 @@
 #include "include/holojs/windows/windows-platform.h"
 #include "spatial-anchors.h"
 #include "surface-mapper.h"
+#include "kinect-sensor-impl.h"
 #include "websocket.h"
 #include <experimental/filesystem>
 #include <map>
@@ -253,6 +254,16 @@ HoloJs::ISurfaceMapper* WindowsPlatform::getSurfaceMapper(HoloJs::IHoloJsScriptH
     RETURN_NULL_IF_FALSE(isSurfaceMappingAvailable());
 
     return new HoloJs::Platforms::Win32::SurfaceMapper(host);
+}
+
+bool WindowsPlatform::isKinectAvailable() 
+{ return true; }
+
+HoloJs::IKinect* WindowsPlatform::getKinect(HoloJs::IHoloJsScriptHostInternal* host) 
+{
+    RETURN_NULL_IF_FALSE(isKinectAvailable());
+
+    return new HoloJs::Platforms::Win32::Kinect(host);
 }
 
 bool WindowsPlatform::isSpeechRecognizerAvailable() { return true; }

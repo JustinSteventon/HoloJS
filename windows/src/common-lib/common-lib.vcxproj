@@ -73,18 +73,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)out\$(Configuration)\$(Platform)\core\</OutDir>
+    <IncludePath>$(KINECTSDK20_DIR)\inc;C:\Program Files\Azure Kinect SDK v1.1.0\sdk\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)out\$(Configuration)\$(Platform)\core\</OutDir>
+    <IncludePath>$(KINECTSDK20_DIR)\inc;C:\Program Files\Azure Kinect SDK v1.1.0\sdk\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)out\$(Configuration)\$(Platform)\core\</OutDir>
+    <IncludePath>$(KINECTSDK20_DIR)\inc;C:\Program Files\Azure Kinect SDK v1.1.0\sdk\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)out\$(Configuration)\$(Platform)\core\</OutDir>
+    <IncludePath>$(KINECTSDK20_DIR)\inc;C:\Program Files\Azure Kinect SDK v1.1.0\sdk\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -193,7 +197,6 @@
     <ClInclude Include="audio-param.h" />
     <ClInclude Include="gain-node.h" />
     <ClInclude Include="include\holojs\windows\IBufferOnMemory.h" />
-    <ClInclude Include="include\holojs\windows\image-data.h" />
     <ClInclude Include="include\holojs\windows\image-element.h" />
     <ClInclude Include="include\holojs\windows\mixed-reality\camera-resources.h" />
     <ClInclude Include="include\holojs\windows\mixed-reality\device-resources.h" />
@@ -206,6 +209,7 @@
     <ClInclude Include="include\holojs\windows\speech-recognizer.h" />
     <ClInclude Include="include\holojs\windows\windows-platform.h" />
     <ClInclude Include="include\holojs\windows\xml-http-request.h" />
+    <ClInclude Include="kinect-sensor-impl.h" />
     <ClInclude Include="package-reader.h" />
     <ClInclude Include="spatial-anchors.h" />
     <ClInclude Include="speech-recognizer.h" />
@@ -218,6 +222,7 @@
     <ClCompile Include="audio-context.cpp" />
     <ClCompile Include="camera-resources.cpp" />
     <ClCompile Include="device-resources.cpp" />
+    <ClCompile Include="kinect-sensor-impl.cpp" />
     <ClCompile Include="mixed-reality-context.cpp" />
     <ClCompile Include="opengl-context.cpp" />
     <ClCompile Include="package-reader.cpp" />

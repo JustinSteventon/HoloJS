@@ -38,6 +38,7 @@ enum class ObjectType {
     ISpeechRecognizer,
 	ISpatialAnchor,
     ISpatialAnchorStore,
+    IKinect,
     None
 };
 
